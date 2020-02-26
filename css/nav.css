@@ -1,0 +1,82 @@
+.nav
+{
+    width: 65%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transition: none;
+    }
+}
+
+.nav {
+    animation: fadeIn .3s ease-in-out;
+}
+
+.nav .nav__header
+{
+    align-self: center;
+}
+
+.nav .nav__header h5 
+{
+    margin: 0;
+}
+
+.nav .nav__header, .nav__navlist
+{
+    align-self: center;
+}
+
+.nav .nav__header, .nav__navlist ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .nav__navlist ul li
+{
+    padding: 10px 20px;
+}
+
+.nav .nav__navlist ul li> a
+{
+    cursor: pointer;
+    opacity: .6;
+    transition: opacity 0.08s ease-in;
+    border-bottom: 0;
+}
+
+.nav .nav__navlist ul li>a:hover
+{
+    opacity: 1;
+}
+
+.nav .nav__sign .nav__sign-btn
+{
+    width:50px;
+    height: 50px;
+    background-color: #6E5494;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .nav__sign .nav__sign-btn i
+{
+    margin: 0;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #fff;
+}

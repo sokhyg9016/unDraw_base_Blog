@@ -1,0 +1,126 @@
+@media (min-width: 768px)
+{
+    .nav, .main
+    {
+        font-size: 16px;
+    }
+    .nav .nav__navlist ul li>a
+    {
+        font-style: 17px;
+    }
+    .main p {
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 380px)
+{
+    .nav
+    {
+        width: 100%;
+        padding: 15px 20px;
+        border-bottom: 1px solid #ddd;
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        z-index: 1;
+        background-color: #fff;
+    }
+    .nav .nav__header
+    {
+        width:100%;
+        align-self: center;
+    }
+    .nav .nav__header h5
+    {
+        font-size: 1.5rem;
+    }
+    .nav .nav__navlist,
+    .nav .nav__sign .nav__sign-btn
+    {
+        display: none;
+    }
+    .main
+    {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 100px;
+        /* animation: none; */
+    }
+    .main-banner
+    {
+        padding-bottom: 50px;
+    }
+    .banner 
+    {
+        flex-direction: column;
+    }
+    .banner .banner__info
+    {
+        width: 100%;
+    }
+    .banner__info .banner__info-heading>font
+    {
+        font-weight: 800;
+    }
+    .banner__info .banner__info-heading
+    {
+        font-weight: 400;
+    }
+    .banner__info .banner__info-description
+    {
+        width: 100%;
+    }
+    .banner .banner__more
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+    .banner .banner__more p
+    {
+        display: none;
+    }
+    .banner .banner__thumbnail
+    {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .category h5
+    {
+        text-align: left;
+        font-weight: 400;
+        font-size: 1.75rem;
+    }
+    .card-list
+    {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .card
+    {
+        margin-bottom: 15px;
+    }
+    footer .footer__info
+    {
+        flex-direction: column;
+    }
+    footer .footer__info .footer__info-date,
+    footer .footer__info .footer__info-sns,
+    footer .footer__info .footer__info-user
+    {
+        width: 100%;
+        padding: 20px 0px;
+        border-bottom: 1px solid #eee;
+    }
+
+    footer .footer__info .footer__info-sns
+    {
+        border-right: none;
+    }
+
+}

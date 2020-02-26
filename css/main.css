@@ -1,0 +1,169 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transition: none;
+    }
+}
+
+@keyframes hideShow {
+    0%{
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.main
+{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    min-height: 100vh;
+    animation: fadeIn .5s ease-in-out;
+}
+
+.main-banner
+{
+    padding-bottom: 100px;
+    border-bottom: 1px solid #ccc;
+    animation: hideShow .7s ease-in-out;
+}
+
+.banner
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.banner .banner__info
+{
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner__info .banner__info-start
+{
+    font-size: 14px;
+}
+
+.banner__info .banner__info-heading
+{
+    font-weight: 800;
+}
+
+.highlight
+{
+    color: #6E5494;
+}
+
+.banner__info .banner__info-description
+{
+    width: 95%;
+}
+
+.banner .banner__more
+{
+    width: 55%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+ }
+
+.banner .banner__more p,
+.banner .banner__more button
+{
+    font-size: 12px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.banner .banner__more button
+{
+    border-radius: 20px;
+    padding-left:  40px;
+    padding-right: 40px;
+}
+
+.banner .banner__thumbnail
+{
+    width: 45%;
+}
+
+.banner .banner__thumbnail img 
+{
+    width: 100%;
+}
+
+.category
+{
+    width:100%;
+    margin-bottom: 100px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #ccc;
+}
+
+.category h5
+{
+    text-align: center;
+    font-weight: 800;
+}
+
+.card-list
+{
+    margin-top: 80px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 15px;
+    align-self: center;
+}
+
+.card .banner__thumbnail 
+{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.card .banner__thumbnail img 
+{
+    width: 100%;
+}
+
+.card .banner__info .banner__info-heading
+{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+

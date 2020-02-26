@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800|Open+Sans:300,400,600,700,800&display=swap');
+@import "reset.css";
+@import "nav.css";
+@import "main.css";
+@import "footer.css";
+@import "mobile.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-weight: 400;
+    min-height: 100vh;
+    color: #444;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 3.3rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.7rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+h5 {
+    font-size: 2.1rem;
+}
+
+h6 {
+    font-size: 1.8rem;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #444;
+}
+
+button
+{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #6E5494;
+    color: #fff;
+    font-weight: 500;
+}
+
+@media (max-width: 380px)
+{
+    body 
+    {
+        width: 100%;
+        line-height: 1.6;
+    }
+    h1, h2, h3, h4, h5, h6 
+    {
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    h2, h3, h4, h5
+    {
+        font-size: 2.2rem;
+    }
+    p 
+    {
+        font-size: 14px;
+    }
+}
